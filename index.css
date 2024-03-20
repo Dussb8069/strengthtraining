@@ -1,0 +1,384 @@
+
+    
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+body {
+    margin: 10px;
+    margin-top: 30; 
+    padding: 0;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    min-height: 100vh;
+    background-image: url(52-1.png); 
+}
+
+
+h3{
+    font-size: 50pt;
+    position: relative;
+    top: 1em;  
+    left: 0.9em; 
+    color: rgb(127, 170, 41);
+}
+
+
+h4{
+    font-size: 70pt;
+    position: relative;
+    top: 0.2em;  
+    left: 0.7em; 
+    color: yellowgreen;
+    margin-top:35px; 
+}
+
+h5{
+    color: white;
+    text-align: left;
+    position: relative; 
+    top: 5em;
+    left: 60em; 
+    font-weight: 200;
+    font-size: 15px;
+    font-family: monospace;
+    line-height:20px;
+
+
+}
+a{
+    font-size: 20pt; 
+}
+
+p2{
+    color: aliceblue;
+    position: absolute;
+    top: 5em;
+    left: 50em; 
+    right: 7em; 
+}
+
+
+/* S T R E G T H    S P O R T S   T O G G L E */ 
+
+.toggle1 {
+    display: flex;
+    padding-top: 50px;
+    width: 400px;
+    position: absolute;
+    top: 19em;
+    left: 55em;
+    color: black;
+    font-size: 18px;
+}
+
+.toggle {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+    text-align: center;
+}
+
+.toggle input {
+    display: none;
+}
+
+/* Top label */
+.toggle-label {
+    position: relative;
+    font-weight: 600;
+    background: green;
+    box-shadow: 0 5px 11px 0 rgba(black), 0 4px 11px 0 rgba(black);
+    color: black;
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 4px;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+}
+
+/* Checkmark */
+.toggle-label:after {
+    content: '';
+    position: absolute;
+    right: 60px;
+    top: 49%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    transition: transform 0.3s ease;}
+
+/* Checkmark when checked */
+.toggle input:checked + .toggle-label:after {
+    transform: rotate(90deg);
+}
+
+/* Dropdown text */
+.toggle-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    color: white;
+    padding: 15px; /* Added padding */
+    box-shadow: 0 5px 11px 0 rgba(black), 0 4px 11px 0 rgba(black);
+}
+
+/* Dropdown background when checked */
+.toggle input:checked ~ .toggle-text {
+    max-height: 300px;
+    opacity: 1;
+    top: 0;
+}
+
+/* Dropdown heading */
+.toggle-text h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.toggle-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Hover effect for the label */
+.toggle-label:hover {
+    background: white; /* Change background color on hover */
+    color: rgb(119, 199, 0); /* Change text color on hover */
+    transition: 0s; 
+}
+
+.toggle-text a{
+    color:rgb(119, 199, 0); 
+}
+
+
+
+/*  N U T R I T I O N  T O G G L E  */ 
+
+.toggletwo {
+    display: flex;
+    padding-top: 50px;
+    width: 400px;
+    position: absolute;
+    top: 19em;
+    left: 29em;
+    font-size: 18px;
+}
+
+.toggle2 {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+    text-align: center;
+}
+
+.toggle2 input {
+    display: none;
+}
+
+.toggle2-label {
+    position: relative;
+    font-weight: 600;
+    background: green;
+    box-shadow: 0 5px 11px 0 rgba(white), 0 4px 11px 0 rgba(white);
+    color: black;
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 4px;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+}
+
+/* Checkmark */
+.toggle2-label:after {
+    content: '';
+    position: absolute;
+    right: 100px;
+    top: 49%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    transition: transform 0.3s ease;}
+
+
+/* the checkmark transformation */
+.toggle2 input:checked + .toggle2-label:after {
+    transform: rotate(90deg);
+}
+
+.toggle2-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.toggle2 input:checked ~ .toggle2-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: ""; /* Remove background color */
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    top: 0;
+}
+
+.toggle2-text h2 {
+    margin-bottom: 15px;
+    padding: 15px 15px 0;
+    color: white;
+}
+
+.toggle2-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}/* Link in toggle text */
+
+.toggle-text a:hover{
+    transition: 0.2s; 
+    background-color: white; 
+}
+
+
+/* Hover effect for the label */
+.toggle2-label:hover {
+    background: white; /* Change background color on hover */
+    color: rgb(119, 199, 0); /* Change text color on hover */
+    transition: 0s; 
+}
+
+.toggle2-text a{
+    color:rgb(119, 199, 0); 
+}
+.toggle2-text a:hover {
+    background-color: white; /* Green color on hover */
+}
+
+
+/*  T R A I N I N G    T O G G L E  */ 
+
+.togglethree {
+    display: flex;
+    padding-top: 50px;
+    width: 400px;
+    position: absolute;
+    top: 19em;
+    left: 3em;
+    font-size: 18px;
+}
+
+.toggle3 {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+    text-align: center;
+}
+
+.toggle3 input {
+    display: none;
+}
+
+.toggle3-label {
+    position: relative;
+    font-weight: 600;
+    background: green;
+    box-shadow: 0 5px 11px 0 rgba(black), 0 4px 11px 0 rgba(black);
+    color: black;
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 4px;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+}
+
+/* Checkmark */
+.toggle3-label:after {
+    content: '';
+    position: absolute;
+    right: 100px;
+    top: 49%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    transition: transform 0.3s ease;}
+
+
+/* the checkmark to be removed */
+.toggle3 input:checked + .toggle3-label:after {
+    transform: rotate(90deg);
+}
+
+.toggle3-text {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.toggle3 input:checked ~ .toggle3-text {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: "";
+    box-shadow: 0 5px 11px 0 rgba(white), 0 4px 11px 0 rgba(white);
+    opacity: 1;
+    top: 0;
+}
+
+.toggle3-text h2 {
+    margin-bottom: 15px;
+    padding: 15px 15px 0;
+    color: white;
+}
+
+.toggle3-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.toggle3-text a {
+    color: yellowgreen; /* Complementary color for white */
+}
+
+.toggle3-text a:hover {
+    background-color:white ; /* Complementary color for black */
+}
+
+/* Hover effect for the label */
+.toggle3-label:hover {
+    background: white; /* Change background color on hover */
+    color: yellowgreen; /* Change text color on hover */
+    transition: 0s; 
+}
+
+
+
