@@ -1,14 +1,22 @@
 
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 10px;
-    margin-top: 30; 
+    margin: 2vw;
+    margin-top: 5vw;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     min-height: 100vh;
-    background-image: url(52-1.png); 
-    color: white; 
+    background-image: url(52-1.png);
+    color: white;
 }
+
 h1,
 h2,
 h3,
@@ -17,86 +25,75 @@ ul {
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: white;
-    padding: 30px;
-}
-
-
-h4 {
-        color: yellowgreen;
-        padding: 7em;
-        font-size: 30pt;
-        line-height: 28pt;
-        
-      }
-
-  p2{
-    font-size: 16pt;
-    line-height: 17pt;
-    color:yellowgreen;
-    position: absolute;
-    top:22em;
-    left: 15em;
-    right: 20em;
-  }
-
-
-
 h1 {
-    font-size: 40pt;
-    margin-bottom: 10px;
-    text-align: left; 
-    position: relative; 
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    position: relative;
     left: 1em;
     color: yellowgreen;
     line-height: 1em;
-    padding: 5em;
-
-}
-p1{
-    font-size: 16pt;
-    color: yellowgreen;
-    position:relative;
-    line-height: 10pt;
-    top:1em;
+    padding: 2vw;
 }
 
 h2 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
     color: yellowgreen;
 }
 
 h3 {
     font-size: 1.4em;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vw;
     color: green;
 }
 
 p {
     font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 1.5vw;
     line-height: 1.6;
+}
+
+p1 {
+    font-size: 1.1em;
+    color: yellowgreen;
+    position: relative;
+    line-height: 1em;
+    top: 1em;
+}
+
+p2 {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color: yellowgreen;
+    position: absolute;
+    top: 35vw;
+    left: 12vw;
+    right: 32vw;
+}
+
+h4 {
+    color: yellowgreen;
+    padding-bottom: 25vw;
+    padding-top: 20vw;
+    padding-left: 10vw;
+    font-size: 3vw;
+    line-height: 3vw;
 }
 
 section.content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 2vw;
 }
 
 section {
-    
     border-radius: 8px;
     box-shadow: 0 2px 10px black;
-    padding: 20px;
+    padding: 2vw;
 }
 
 section#keys,
@@ -114,17 +111,31 @@ section#macronutrients {
 
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
+.container::after {
+    content: '';
+    position: absolute;
+    left: 12vw;
+    top: 12.4vw;
+    width: 0;
+    height: 0;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 4vw solid yellowgreen;
+    position: absolute;
+    bottom: -1.5vw;
+    right: calc(50% - 2vw);
+}
 
 footer {
     background-color: yellowgreen;
     text-align: center;
-    padding: 10px 0;
+    padding: 1vw 0;
     grid-column: span 2;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-  }
+}

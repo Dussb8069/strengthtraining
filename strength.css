@@ -1,89 +1,102 @@
-/* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global styles */
-  body {
-    margin: 10px;
-    margin-top: 30; 
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
-    min-height: 100vh;
-    background-image: url(52-1.png); 
-    color: white; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  header {
 
-    color: yellowgreen;
-    padding: 10em;
-    grid-column: span 2;
-    font-size: 20pt;
-    
-  }
-  
-  header h1 {
-    font-size: 32pt;
-    margin-bottom: 10px;
-  }
-  
-  header h2 {
-    font-size: 24pt;
-    margin-bottom: 5px;
-  }
-  
-  header p {
-    font-size: 16pt;
-  }
-  
-  section {
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  h2 {
-    font-size: 24pt;
-    margin-bottom: 10px;
-    color: yellowgreen;
-  }
-  
-  h3 {
-    font-size: 20pt;
-    margin-top: 20px;
-    color: yellowgreen;
-  }
-  
-  p {
-    font-size: 16pt;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: yellowgreen;
-    text-align: center;
-    padding: 10px 0;
-    grid-column: span 2;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  h4 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+/* Global styles */
+body {
+  margin: 2vw;
+  margin-top: 5vw; 
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  min-height: 100vh;
+  background-image: url(52-1.png);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2vw; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw; 
+}
+
+header {
+  color: yellowgreen;
+  padding: 17vw; 
+  grid-column: span 2;
+  font-size: 2vw; 
+  text-align: left;
+}
+header:after {
+  content: '';
+  position: absolute;
+  left: 10em;
+  top:12.4em;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid yellowgreen;
+  position: absolute;
+  bottom: -15px; /* Adjust as needed */
+  right: calc(50% - 10px); /* Centered horizontally */
+}
+
+
+header h1 {
+  font-size: 3.2vw; 
+  margin-bottom: 1vw; 
+}
+
+header h2 {
+  font-size: 2.4vw; 
+  margin-bottom: 0.5vw; 
+}
+
+header p {
+  font-size: 1.6vw; 
+  margin-bottom: 1vw; 
+}
+
+section {
+  padding: 2vw; 
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 2.4vw;
+  margin-bottom: 1vw; 
+  color: yellowgreen;
+}
+
+h3 {
+  font-size: 2vw; 
+  margin-top: 2vw; 
+  color: yellowgreen;
+}
+
+p {
+  font-size: 1.6vw; 
+  margin-bottom: 1vw; 
+}
+
+footer {
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 1vw 0; 
+  grid-column: span 2;
+}
+
+footer p {
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 2vw; 
+}

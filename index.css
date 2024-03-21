@@ -18,48 +18,39 @@ body {
 
 
 h3{
-    font-size: 50pt;
+    font-size: 5vw; 
     position: relative;
-    top: 1em;  
-    left: 0.9em; 
-    color: rgb(127, 170, 41);
+    top: 0.9em;
+    left: 0.7em;
+    color: rgb(129, 174, 40);
+    margin-top: 2vh; 
 }
 
 
-h4{
-    font-size: 70pt;
+h4 {
+    font-size: 7vw; 
     position: relative;
-    top: 0.2em;  
-    left: 0.7em; 
+    top: 0.3em;
+    left: 0.5em;
     color: yellowgreen;
-    margin-top:35px; 
+    margin-top: 2vh;
 }
 
-h5{
-    color: white;
-    text-align: left;
-    position: relative; 
-    top: 5em;
-    left: 60em; 
-    font-weight: 200;
-    font-size: 15px;
-    font-family: monospace;
-    line-height:20px;
 
-
-}
 a{
     font-size: 20pt; 
 }
 
-p2{
+p2 {
     color: aliceblue;
     position: absolute;
+    left: 60vw; 
+    right: 5vw; 
     top: 5em;
-    left: 50em; 
-    right: 7em; 
+    font-size: 1.2vw; 
+    line-height: 1.3;
+    padding: 1vh 2vw; 
 }
-
 
 /* S T R E G T H    S P O R T S   T O G G L E */ 
 
@@ -98,7 +89,7 @@ p2{
     padding: 15px 0;
     border-radius: 4px;
     z-index: 1;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* Checkmark */
@@ -110,9 +101,9 @@ p2{
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 18px solid yellowgreen; 
     transition: transform 0.3s ease;}
 
 /* Checkmark when checked */
@@ -131,7 +122,7 @@ p2{
     opacity: 0.5;
     transition: all 0.3s ease;
     color: white;
-    padding: 15px; /* Added padding */
+    padding: 15px; 
     box-shadow: 0 5px 11px 0 rgba(black), 0 4px 11px 0 rgba(black);
 }
 
@@ -154,8 +145,8 @@ p2{
 }
 /* Hover effect for the label */
 .toggle-label:hover {
-    background: white; /* Change background color on hover */
-    color: rgb(119, 199, 0); /* Change text color on hover */
+    background: white; 
+    color: rgb(119, 199, 0); 
     transition: 0s; 
 }
 
@@ -200,21 +191,21 @@ p2{
     padding: 15px 0;
     border-radius: 4px;
     z-index: 1;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* Checkmark */
 .toggle2-label:after {
     content: '';
     position: absolute;
-    right: 100px;
+    right: 60px;
     top: 49%;
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 18px solid yellowgreen; 
     transition: transform 0.3s ease;}
 
 
@@ -238,7 +229,7 @@ p2{
 .toggle2 input:checked ~ .toggle2-text {
     max-height: 300px;
     padding-bottom: 25px;
-    background: ""; /* Remove background color */
+    background: ""; 
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
     opacity: 1;
     top: 0;
@@ -253,7 +244,7 @@ p2{
 .toggle2-text p {
     padding-left: 15px;
     padding-right: 15px;
-}/* Link in toggle text */
+}
 
 .toggle-text a:hover{
     transition: 0.2s; 
@@ -263,8 +254,8 @@ p2{
 
 /* Hover effect for the label */
 .toggle2-label:hover {
-    background: white; /* Change background color on hover */
-    color: rgb(119, 199, 0); /* Change text color on hover */
+    background: white; 
+    color: rgb(119, 199, 0);
     transition: 0s; 
 }
 
@@ -272,7 +263,7 @@ p2{
     color:rgb(119, 199, 0); 
 }
 .toggle2-text a:hover {
-    background-color: white; /* Green color on hover */
+    background-color: white; 
 }
 
 
@@ -311,22 +302,23 @@ p2{
     padding: 15px 0;
     border-radius: 4px;
     z-index: 1;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for background and color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* Checkmark */
 .toggle3-label:after {
     content: '';
     position: absolute;
-    right: 100px;
+    right: 60px;
     top: 49%;
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 15px solid yellowgreen; /* Adjust size and color as needed */
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 18px solid yellowgreen; 
     transition: transform 0.3s ease;}
+
 
 
 /* the checkmark to be removed */
@@ -366,19 +358,22 @@ p2{
     padding-right: 15px;
 }
 .toggle3-text a {
-    color: yellowgreen; /* Complementary color for white */
+    color: yellowgreen;
 }
 
 .toggle3-text a:hover {
-    background-color:white ; /* Complementary color for black */
+    background-color:white ;
 }
 
 /* Hover effect for the label */
 .toggle3-label:hover {
-    background: white; /* Change background color on hover */
-    color: yellowgreen; /* Change text color on hover */
+    background: white; 
+    color: yellowgreen;
     transition: 0s; 
 }
+
+
+
 
 
 
